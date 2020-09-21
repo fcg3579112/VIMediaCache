@@ -38,5 +38,6 @@
 
 + (NSURL *)assetURLWithURL:(NSURL *)url;
 - (AVPlayerItem *)playerItemWithURL:(NSURL *)url;
+- (void)cacheSource:(NSURL *)url;
 
 @end
