@@ -114,7 +114,7 @@ static NSString *kCacheScheme = @"__VIMediaCache___:";
     }
     return playerItem;
 }
-- (void)cacheSource:(NSURL *)url {
+- (void)downloadSource:(NSURL *)url {
     NSURL *assetURL = [VIResourceLoaderManager assetURLWithURL:url];
     AVURLAsset *urlAsset = [AVURLAsset URLAssetWithURL:assetURL options:nil];
     [urlAsset.resourceLoader setDelegate:self queue:dispatch_get_main_queue()];
